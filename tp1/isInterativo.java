@@ -2,7 +2,7 @@ package tp1;
 
 
 
-public class IsInterativo {
+public class isInterativo {
     public static void main(String[] args) {
         String read = MyIO.readLine();
         while(!read.equals("FIM")){
@@ -50,7 +50,7 @@ public class IsInterativo {
         return X1;
     }
     public static String isConsoante(String frase) {
-        String X1 = "";
+        String X2 = "";
         for (int i = 0; i < frase.length(); i++) {
             switch (frase.toLowerCase().charAt(i)) {
                 case 'a':
@@ -67,37 +67,36 @@ public class IsInterativo {
                     if(frase.charAt(i) >= 48 && frase.charAt(i) <= 57){
                         return "";
                     }
-                    X1 = "X2";
+                    X2 = "X2";
                     break;
             }
         }
-        return X1;
+        return X2;
     }
     public static String isInteiro(String frase) {
-        String X1 = "";
+        String X3 = "";
         for (int i = 0; i < frase.length(); i++) {
             if(frase.charAt(i) >= 48 && frase.charAt(i) <= 57){
-                X1 = "X3";
+                X3 = "X3";
             }
             else{
                 return "";
             }
         }
-        return X1;
+        return X3;
     }
     public static String isReal(String frase) {
-        String X1 = "";
+        String X4 = "";
         for (int i = 0; i < frase.length(); i++) {
             if(frase.charAt(i) >= 48 && frase.charAt(i) <= 57){
-                X1 = "X4";
+                X4 = "X4";
             }else if(frase.charAt(i) == ','){
-                X1 = "X4";
+                X4 = "X4";
             }
             else{
                 return "";
             }
         }
-        return X1;
+        return X4;
     }
 }
-
