@@ -1,23 +1,30 @@
-package com.pucminas.tp1;
 
-public class ciframentoRecursivo {
+public class CiframentoRecursivo {
+
+
     public static void main(String[] args) {
-        String read = MyIO.readLine();
+        String read = myIO.readLine();
         while(!read.equals("FIM")){
-            System.out.println(criptografia(read));
-            read = MyIO.readLine();
+            System.out.println(executa(read));
+            read = myIO.readLine();
         }
+
+    }
+    public static String executa(String frase){
+        return criptografia(frase, 0, "");
     }
 
-    public static String criptografia(String frase) {
+    public static String criptografia(String frase, int i, String novaFrase) {
         char caracter = 0;
-        String novaFrase = "";
-//            for (int i = 0; i < frase.length(); i++) {
-//                caracter = (char) (frase.charAt(i) + 3);
-//                novaFrase = novaFrase + caracter;
-//            }
-
-        return criptografia(frase);
+        if(i < frase.length()){
+            caracter = (char) (frase.charAt(i) + 3);
+            novaFrase = novaFrase + caracter;
+            return criptografia(frase, i + 1, novaFrase);
+        }
+        else{
+            return novaFrase;
+        }
 
     }
+
 }
