@@ -1,4 +1,4 @@
-package com.pucminas.tp1;
+package tp1;
 
 public class ciframentoIterativo {
     public static void main(String[] args) {

@@ -1,12 +1,13 @@
+package tp1;
 
-public class CiframentoRecursivo {
+public class ciframentoRecursivo {
 
 
     public static void main(String[] args) {
-        String read = myIO.readLine();
+        String read = MyIO.readLine();
         while(!read.equals("FIM")){
             System.out.println(executa(read));
-            read = myIO.readLine();
+            read = MyIO.readLine();
         }
 
     }

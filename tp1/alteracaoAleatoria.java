@@ -1,4 +1,4 @@
-package com.pucminas.tp1;
+package tp1;
 import java.util.Random;
 
 public class alteracaoAleatoria {
